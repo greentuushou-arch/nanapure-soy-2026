@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>腕時計のななぷれへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
+<title>ななぷれselectshopへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* ロゴの紺を軸に、ロイヤルブルー×スカイ×シルバー */
+  /* ロゴの紺を軸に、クリスマスの赤を差し色に（雪の白・シルバー） */
   --navy:#0b2e57;
   --night:#061a33;
   --blue:#1f5fd6;
@@ -19,12 +19,16 @@
   --sky-l:#cfe8ff;
   --ice:#eef5fd;
   --paper:#f5f8fc;
+  --red:#d7263d;
+  --red-d:#a3172a;
+  --red-l:#fde4e7;
   --ink:#11223a;
   --ink-2:#56657a;
   --line:rgba(17,34,58,.12);
   --sans:"Noto Sans JP",sans-serif;
   --en:"Jost","Noto Sans JP",sans-serif;
   --silver:linear-gradient(180deg,#ffffff 0%,#e3ecf6 35%,#b9c8da 68%,#8fa3ba 100%);
+  --red-grad:linear-gradient(180deg,#ef4a5e 0%,#d7263d 55%,#b01b30 100%);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--navy);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
@@ -39,35 +43,36 @@ a{color:inherit;text-decoration:none}
 .head>*{position:relative;z-index:1}
 .head[data-bg]::before{content:attr(data-bg);position:absolute;left:50%;top:-30px;z-index:0;transform:translateX(-50%);font-family:var(--en);font-weight:600;font-size:clamp(72px,22vw,146px);line-height:1;letter-spacing:.02em;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(31,95,214,.14);pointer-events:none}
 .dark .head[data-bg]::before{-webkit-text-stroke-color:rgba(124,196,255,.24)}
-.label{display:inline-flex;align-items:center;gap:14px;font-family:var(--en);font-weight:500;font-size:17px;letter-spacing:.3em;color:var(--blue)}
+.label{display:inline-flex;align-items:center;gap:14px;font-family:var(--en);font-weight:500;font-size:17px;letter-spacing:.3em;color:var(--red)}
 .label::before,.label::after{content:"";width:28px;height:1.5px;background:currentColor}
 .head h2{font-weight:900;font-size:32px;line-height:1.5;letter-spacing:.06em;margin-top:14px}
 .head .lead{margin-top:16px;font-size:18px;color:var(--ink-2)}
-.dark .label{color:var(--sky)}
+.dark .label{color:#ff8a98}
 .dark .head h2{color:#fff}
 .dark .head .lead{color:rgba(255,255,255,.75)}
 
 /* ---------- 投票ボタン（シャイン） ---------- */
-.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:540px;min-height:78px;margin:0 auto;padding:0 20px;border-radius:999px;background:var(--silver);color:var(--navy);font-weight:700;font-size:clamp(17px,5vw,21px);letter-spacing:.08em;white-space:nowrap;box-shadow:0 5px 0 #6f86a1,0 12px 26px rgba(0,0,0,.35);overflow:hidden;transition:transform .15s,box-shadow .15s}
-.vote:active{transform:translateY(3px);box-shadow:0 2px 0 #6f86a1}
-.vote .arw{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-size:14px;flex:none}
-.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.9),transparent);transform:skewX(-20deg);pointer-events:none}
+.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:560px;min-height:78px;margin:0 auto;padding:0 14px;border-radius:999px;background:var(--red-grad);color:#fff;font-weight:700;font-size:clamp(15px,4.3vw,21px);letter-spacing:.02em;white-space:nowrap;box-shadow:0 5px 0 var(--red-d),0 12px 26px rgba(0,0,0,.3);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vote:active{transform:translateY(3px);box-shadow:0 2px 0 var(--red-d)}
+.vote .arw{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fff;color:var(--red);font-size:14px;flex:none}
+.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);pointer-events:none}
 .vote.np-shine-play::after{animation:shine 1.6s ease-in-out}
 @keyframes shine{to{left:130%}}
 .vote-note{text-align:center;font-size:17px;color:var(--ink-2);margin-top:14px;line-height:1.7}
 
 /* ---------- FV ---------- */
-.fv{position:relative;background:radial-gradient(120% 60% at 50% 50%,#173f78 0%,#0b2e57 42%,#061a33 100%);color:#fff;overflow:hidden}
+.fv{position:relative;background:radial-gradient(90% 40% at 50% 40%,rgba(215,38,61,.22) 0%,transparent 70%),radial-gradient(120% 60% at 50% 50%,#173f78 0%,#0b2e57 42%,#061a33 100%);color:#fff;overflow:hidden}
 .fv-bar{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid rgba(124,196,255,.3)}
 .fv-bar a{display:flex;align-items:center;gap:10px}
 .fv-bar img{height:58px;width:auto}
 .fv-bar span{font-size:15px;letter-spacing:.12em;color:rgba(255,255,255,.7)}
 .fv-head{position:relative;z-index:4;text-align:center;padding:36px 12px 0}
-.emb{font-family:var(--en);font-weight:500;font-size:clamp(18px,5.3vw,32px);line-height:1.2;letter-spacing:.12em;padding-left:.12em;white-space:nowrap}
-.emb b{display:block;margin-top:2px;font-weight:600;font-size:2.7em;line-height:1;letter-spacing:.04em;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
-.fv-title{margin-top:12px;white-space:nowrap;font-weight:900;font-size:clamp(54px,16.2vw,116px);line-height:1.1;letter-spacing:.02em}
-.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:14px;background:var(--sky);color:var(--night);font-size:19px;font-weight:900;padding:6px 24px;border-radius:999px}
-.fv-dl b{font-family:var(--en);font-weight:600;font-size:34px;line-height:1}
+.emb{font-family:var(--en);font-weight:500;font-size:clamp(17px,4.8vw,28px);line-height:1.1;letter-spacing:.16em;padding-left:.16em;white-space:nowrap}
+.emb .big{display:block;margin-top:6px;font-weight:600;font-size:clamp(46px,13.6vw,96px);line-height:1.02;letter-spacing:.04em;padding-left:.04em}
+.emb b{display:block;margin-top:6px;font-weight:600;font-size:clamp(62px,19vw,132px);line-height:1;letter-spacing:.04em;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fv-title{margin-top:14px;white-space:nowrap;font-weight:900;font-size:clamp(34px,9.6vw,64px);line-height:1.15;letter-spacing:.08em;padding-left:.08em}
+.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:12px;background:#fff;color:var(--red-d);font-size:18px;font-weight:900;padding:6px 24px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.fv-dl b{font-family:var(--en);font-weight:600;font-size:32px;line-height:1;color:var(--red)}
 .fv-pts{position:relative;z-index:3;padding:26px 20px 0}
 .fv-pt{border:1.5px solid var(--sky);border-radius:14px;padding:20px 10px 16px;text-align:center;line-height:1.5;letter-spacing:0;background:rgba(6,26,51,.5)}
 .fv-pt .l1{white-space:nowrap;font-size:clamp(14px,4.3vw,21px);font-weight:700;letter-spacing:.03em;color:var(--sky)}
@@ -81,17 +86,43 @@ a{color:inherit;text-decoration:none}
 .fv-body{position:relative;z-index:3;padding:0 20px 52px}
 .fv-lead{margin-top:30px;text-align:center;white-space:nowrap;font-weight:700;font-size:clamp(15px,4.3vw,28px);letter-spacing:.02em;line-height:1.5;color:rgba(255,255,255,.92)}
 .fv-copy{text-align:center;margin-top:8px;font-weight:900;font-size:clamp(25px,7vw,42px);line-height:1.55;letter-spacing:.04em}
-.fv-copy em{font-style:normal;color:var(--sky)}
+.fv-copy em{font-style:normal;color:#fff;background:linear-gradient(transparent 70%,rgba(215,38,61,.85) 70%);padding:0 .1em}
 .fv-cta{margin-top:30px}
 .fv-cta .vote-note{color:rgba(255,255,255,.75)}
+/* ふわふわ降る雪 */
+.snow{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.snow i{position:absolute;top:-12px;width:var(--s,6px);height:var(--s,6px);border-radius:50%;background:#fff;opacity:var(--o,.8);filter:blur(var(--b,0px));animation:snow linear infinite}
+@keyframes snow{0%{transform:translate(0,0)}100%{transform:translate(var(--dx,20px),var(--fall,900px))}}
 /* 星のまたたき */
 .spark{position:absolute;inset:0;z-index:2;pointer-events:none}
 .spark i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(124,196,255,.85);opacity:0;animation:twinkle ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
 
-/* ---------- 投票アニメ：腕時計の針がくるくる回って12時でピタッ → THANK YOU! ---------- */
-.stage{position:relative;z-index:3;height:350px;margin-top:8px}
-.watch{position:absolute;left:50%;top:58px;width:216px;height:288px;margin-left:-108px;overflow:visible;filter:drop-shadow(0 18px 26px rgba(0,0,0,.45))}
+/* ---------- 投票アニメ：リボンをかけたギフトボックス型の投票箱に、封筒がスッと入る ---------- */
+.stage{position:relative;z-index:3;height:350px;margin-top:6px}
+.gbox{position:absolute;left:50%;bottom:16px;width:260px;height:230px;margin-left:-130px;overflow:visible;transform-origin:50% 100%;animation:gbump 5s ease-in-out infinite}
+.gbox .bow{transform-box:view-box;transform-origin:196px 44px;animation:bow 5s ease-in-out infinite}
+@keyframes gbump{0%,52%,100%{transform:scale(1)}56%{transform:scale(1.04,.95)}61%{transform:scale(.99,1.02)}66%{transform:scale(1)}}
+@keyframes bow{0%,52%,100%{transform:rotate(0) scale(1)}56%{transform:rotate(-10deg) scale(1.12)}62%{transform:rotate(7deg) scale(1)}68%{transform:rotate(0)}}
+/* 投入口の中心（SVG上 x84・y61）より下の封筒は見えないように切り抜く */
+.slotwin{position:absolute;left:calc(50% - 46px - 45px);bottom:185px;width:90px;height:150px;overflow:hidden;z-index:4}
+.env{position:absolute;left:50%;bottom:0;width:58px;height:40px;margin-left:-29px;animation:env 5s ease-in-out infinite}
+.env svg{width:100%;height:100%;display:block;overflow:visible;filter:drop-shadow(0 6px 8px rgba(0,0,0,.35))}
+@keyframes env{
+  0%{transform:translateY(-70px) rotate(-14deg);opacity:0}
+  10%{opacity:1}
+  30%,40%{transform:translateY(-26px) rotate(0)}
+  52%,100%{transform:translateY(48px) rotate(0);opacity:1}
+}
+.pop{position:absolute;left:50%;top:6px;z-index:5;font-family:var(--en);font-weight:600;font-size:46px;line-height:1;letter-spacing:.06em;color:#fff;text-shadow:0 0 18px rgba(215,38,61,.7);transform:translateX(-50%);opacity:0;animation:pop 5s infinite;white-space:nowrap}
+@keyframes pop{0%,52%{opacity:0;transform:translateX(-50%) scale(.6);animation-timing-function:cubic-bezier(.2,.8,.3,1)}57%{opacity:1;transform:translateX(-50%) scale(1)}84%{opacity:1;transform:translateX(-50%) scale(1);animation-timing-function:linear}100%{opacity:0;transform:translateX(-50%) scale(1)}}
+.burst{position:absolute;left:calc(50% - 46px);bottom:185px;z-index:5;width:0;height:0}
+.burst i{position:absolute;left:0;top:0;width:var(--sz,20px);height:var(--sz,20px);margin:calc(var(--sz,20px) / -2) 0 0 calc(var(--sz,20px) / -2);background:var(--img) center/contain no-repeat;opacity:0;animation:burst 5s linear infinite}
+@keyframes burst{0%,52%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}54%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
+
+/* ---------- 腕時計（下の「おすすめ」で使う）：針がくるくる回って12時でピタッ ---------- */
+.watchbox{display:flex;justify-content:center;margin:-6px 0 18px}
+.watch{width:150px;height:200px;overflow:visible;filter:drop-shadow(0 10px 16px rgba(11,46,87,.25))}
 .watch .hand{transform-box:view-box;transform-origin:120px 160px}
 .watch .hh{animation:spinH 5s infinite}
 .watch .hm{animation:spinM 5s infinite}
@@ -101,13 +132,6 @@ a{color:inherit;text-decoration:none}
 @keyframes spinS{0%{transform:rotate(0);animation-timing-function:cubic-bezier(.25,.6,.2,1)}46%,100%{transform:rotate(3600deg)}}
 .watch .glow{opacity:0;animation:glow 5s infinite}
 @keyframes glow{0%,45%{opacity:0}50%{opacity:1}64%{opacity:.35}86%{opacity:.35}100%{opacity:0}}
-.watch .ok{opacity:0;transform-box:view-box;transform-origin:120px 198px;animation:ok 5s infinite}
-@keyframes ok{0%,46%{opacity:0;transform:scale(.4);animation-timing-function:cubic-bezier(.2,.8,.3,1)}52%{opacity:1;transform:scale(1)}84%{opacity:1;transform:scale(1);animation-timing-function:linear}100%{opacity:0;transform:scale(1)}}
-.pop{position:absolute;left:50%;top:0;z-index:5;font-family:var(--en);font-weight:600;font-size:48px;line-height:1;letter-spacing:.06em;color:#fff;text-shadow:0 0 18px rgba(124,196,255,.8);transform:translateX(-50%);opacity:0;animation:pop 5s infinite;white-space:nowrap}
-@keyframes pop{0%,46%{opacity:0;transform:translateX(-50%) scale(.6);animation-timing-function:cubic-bezier(.2,.8,.3,1)}52%{opacity:1;transform:translateX(-50%) scale(1)}84%{opacity:1;transform:translateX(-50%) scale(1);animation-timing-function:linear}100%{opacity:0;transform:translateX(-50%) scale(1)}}
-.burst{position:absolute;left:50%;top:178px;z-index:2;width:0;height:0}
-.burst i{position:absolute;left:0;top:0;width:var(--sz,20px);height:var(--sz,20px);margin:calc(var(--sz,20px) / -2) 0 0 calc(var(--sz,20px) / -2);background:var(--img) center/contain no-repeat;opacity:0;animation:burst 5s linear infinite}
-@keyframes burst{0%,46%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}48%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
 
 /* ---------- 投票スタート ---------- */
 .start{padding:62px 18px 52px;text-align:center}
@@ -120,15 +144,15 @@ a{color:inherit;text-decoration:none}
 /* ---------- お手紙 ---------- */
 .letter-sec{padding:0 14px 66px}
 .letter{position:relative;background:#fff;border-radius:6px;padding:0 22px 40px;box-shadow:0 16px 40px rgba(11,46,87,.1)}
-.letter-top{position:relative;margin:0 -22px 42px;background:var(--navy);color:#fff;text-align:center;padding:26px 16px 46px;border-radius:6px 6px 0 0}
+.letter-top{position:relative;margin:0 -22px 42px;background:var(--red-grad);color:#fff;text-align:center;padding:26px 16px 46px;border-radius:6px 6px 0 0}
 .letter-top .en{display:block;font-weight:300;font-size:32px;letter-spacing:.3em;line-height:1.2;padding-left:.3em}
 .letter-top small{display:block;font-size:16px;letter-spacing:.14em;color:rgba(255,255,255,.8);margin-top:6px}
-.letter-top .seal{position:absolute;left:50%;bottom:-34px;display:grid;place-items:center;width:68px;height:68px;margin-left:-34px;border-radius:50%;background:var(--silver);color:var(--navy);font-family:var(--en);font-weight:600;font-size:13px;letter-spacing:.04em;box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.letter-top .seal{position:absolute;left:50%;bottom:-34px;display:grid;place-items:center;width:68px;height:68px;margin-left:-34px;border-radius:50%;background:var(--silver);color:var(--red-d);font-family:var(--en);font-weight:600;font-size:13px;letter-spacing:.04em;box-shadow:0 6px 14px rgba(0,0,0,.2)}
 .letter p{font-size:18px;font-weight:500;line-height:2.05}
 .letter p+p{margin-top:1.1em}
-.letter .to{font-size:19px;font-weight:700;color:var(--blue)}
+.letter .to{font-size:19px;font-weight:700;color:var(--red)}
 .letter mark{background:linear-gradient(transparent 62%,var(--sky-l) 62%);color:inherit}
-.letter .theme{margin:1.4em 0;padding:16px 8px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:900;font-size:21px;line-height:1.7;color:var(--blue-d)}
+.letter .theme{margin:1.4em 0;padding:16px 8px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:900;font-size:21px;line-height:1.7;color:var(--navy)}
 .letter .sign{margin-top:1.6em;text-align:right}
 .letter .sign small{display:block;font-size:16px;color:var(--ink-2)}
 
@@ -149,9 +173,9 @@ a{color:inherit;text-decoration:none}
 .pt{position:relative;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line)}
 .pt .ph{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#fff}
 .pt .ph img{width:100%;height:100%;object-fit:contain}
-.pt .no{position:absolute;top:0;left:0;z-index:2;background:var(--navy);color:#fff;font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.06em;padding:6px 16px}
+.pt .no{position:absolute;top:0;left:0;z-index:2;background:var(--red);color:#fff;font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.06em;padding:6px 16px}
 .pt .tx{padding:20px 20px 24px}
-.pt .tx .en{display:block;font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--blue)}
+.pt .tx .en{display:block;font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--red)}
 .pt h3{font-weight:900;font-size:21px;line-height:1.5;margin-top:4px}
 .pt p{font-size:17px;color:var(--ink-2);line-height:1.8;margin-top:8px}
 
@@ -169,24 +193,24 @@ a{color:inherit;text-decoration:none}
 /* ---------- 投票方法 ---------- */
 .how{padding:72px 0 62px}
 .steps{display:grid;gap:12px}
-.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;background:#fff;padding:20px;border-left:4px solid var(--blue);border-radius:4px}
-.steps .sn{font-family:var(--en);font-weight:500;font-size:15px;letter-spacing:.2em;color:var(--blue);text-align:center;line-height:1}
+.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;background:#fff;padding:20px;border-left:4px solid var(--red);border-radius:4px}
+.steps .sn{font-family:var(--en);font-weight:500;font-size:15px;letter-spacing:.2em;color:var(--red);text-align:center;line-height:1}
 .steps .sn b{display:block;font-weight:400;font-size:44px;color:var(--ink);letter-spacing:0;margin-top:4px}
 .steps h3{font-size:19px;font-weight:900;line-height:1.5}
 .steps p{font-size:17px;color:var(--ink-2);line-height:1.7;margin-top:2px}
 
 /* ---------- 締め ---------- */
-.last{position:relative;background:radial-gradient(120% 80% at 50% 100%,#173f78 0%,#0b2e57 50%,#061a33 100%);color:#fff;padding:72px 22px 66px;text-align:center;overflow:hidden}
+.last{position:relative;background:radial-gradient(90% 50% at 50% 100%,rgba(215,38,61,.28) 0%,transparent 70%),radial-gradient(120% 80% at 50% 100%,#173f78 0%,#0b2e57 50%,#061a33 100%);color:#fff;padding:72px 22px 66px;text-align:center;overflow:hidden}
 .last .big{position:relative;z-index:3;font-family:var(--en);font-weight:600;font-size:clamp(54px,15.6vw,108px);line-height:.95;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.5px var(--sky)}
 .last h2{position:relative;z-index:3;font-weight:900;font-size:clamp(25px,7vw,34px);line-height:1.6;letter-spacing:.06em;margin:24px 0 32px}
-.last h2 em{font-style:normal;color:var(--sky)}
+.last h2 em{font-style:normal;color:#fff;background:linear-gradient(transparent 70%,rgba(215,38,61,.85) 70%);padding:0 .1em}
 .last .vote,.last .vote-note{position:relative;z-index:3}
 .last .vote-note{color:rgba(255,255,255,.8)}
 
 /* ---------- 商品 ---------- */
 .items{background:#fff;padding:72px 0 64px}
 .sub-head{text-align:center;margin:0 0 24px}
-.sub-head .en{display:block;font-weight:500;font-size:16px;letter-spacing:.3em;color:var(--blue)}
+.sub-head .en{display:block;font-weight:500;font-size:16px;letter-spacing:.3em;color:var(--red)}
 .sub-head b{display:block;font-weight:900;font-size:23px;letter-spacing:.06em;margin-top:2px}
 .sub-head.mt{margin-top:60px}
 .premium{display:grid;gap:18px}
@@ -195,27 +219,27 @@ a{color:inherit;text-decoration:none}
 .pm .ph img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
 .pm:hover .ph img{transform:scale(1.04)}
 .pm .tx{padding:18px 20px 22px}
-.pm .br{font-family:var(--en);font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--sky)}
+.pm .br{font-family:var(--en);font-weight:500;font-size:16px;letter-spacing:.2em;color:#ff8a98}
 .pm h4{font-size:18px;font-weight:700;margin-top:6px;line-height:1.6}
 .pm .price{font-family:var(--en);font-weight:500;font-size:24px;color:var(--sky);margin-top:6px}
 .pm .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:rgba(255,255,255,.75)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 14px}
 .it .ph{display:block;aspect-ratio:1/1;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:6px}
 .it .ph img{width:100%;height:100%;object-fit:contain}
-.it .tg{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--blue);border:1.5px solid var(--blue);border-radius:4px;padding:0 8px;line-height:1.7}
+.it .tg{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--red);border:1.5px solid var(--red);border-radius:4px;padding:0 8px;line-height:1.7}
 .it h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:6px}
 .it .price{font-family:var(--en);font-weight:500;font-size:20px;color:var(--blue-d);margin-top:2px}
 .it .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-2)}
 .price-nt{margin-top:14px;font-size:14px;color:var(--ink-2);text-align:right}
 .links{margin-top:46px}
 .btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 26px;background:var(--navy);color:#fff;border-radius:999px;font-weight:700;font-size:18px;letter-spacing:.08em;transition:background .25s}
-.btn::after{content:"→";font-family:var(--en);color:var(--sky)}
-.btn:hover{background:var(--blue)}
+.btn::after{content:"→";font-family:var(--en);color:#ff8a98}
+.btn:hover{background:var(--red)}
 
 /* ---------- 追従ボタン ---------- */
 .fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(6,26,51,.94);transform:translateY(110%);transition:transform .35s}
 .fixed.on{transform:none}
-.fixed .vote{min-height:58px;box-shadow:0 3px 0 #6f86a1}
+.fixed .vote{min-height:58px;box-shadow:0 3px 0 var(--red-d)}
 
 @media (min-width:768px){
   .in{padding:0 56px}
@@ -225,8 +249,6 @@ a{color:inherit;text-decoration:none}
   .fv-dl b{font-size:40px}
   .fv-pts{padding:30px 56px 0}
   .fv-body{padding:0 56px 66px}
-  .stage{height:390px}
-  .watch{scale:1.12;transform-origin:50% 0}
   .head h2{font-size:38px}
   .letter-sec{padding:0 56px 72px}
   .letter{padding:0 52px 52px}
@@ -240,16 +262,15 @@ a{color:inherit;text-decoration:none}
   .bb:nth-child(odd){margin-right:140px}
   .bb:nth-child(even){margin-left:140px}
   .steps{grid-template-columns:repeat(3,1fr)}
-  .steps li{grid-template-columns:1fr;text-align:center;padding:28px 16px;border-left:0;border-top:4px solid var(--blue)}
+  .steps li{grid-template-columns:1fr;text-align:center;padding:28px 16px;border-left:0;border-top:4px solid var(--red)}
   .premium{grid-template-columns:repeat(3,1fr)}
   .grid{grid-template-columns:repeat(3,1fr)}
   .fixed{display:none}
   .wrap{padding-bottom:0}
 }
 @media (prefers-reduced-motion:reduce){
-  .vote.np-shine-play::after,.spark i,.watch .hand,.watch .glow{animation:none}
-  .spark,.burst,.pop{display:none}
-  .watch .ok{animation:none;opacity:1}
+  .vote.np-shine-play::after,.spark i,.watch .hand,.watch .glow,.gbox,.gbox .bow,.env{animation:none}
+  .spark,.snow,.burst,.pop{display:none}
 }
 </style>
 </head>
@@ -258,10 +279,11 @@ a{color:inherit;text-decoration:none}
 
   <!-- ===== FV ===== -->
   <header class="fv" id="fv">
-    <div class="spark" data-spark="30"></div>
-    <div class="fv-bar"><a href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener"><img src="images/logo-white.png" alt="腕時計のななぷれ select shop" width="866" height="768"></a><span>楽天市場店</span></div>
+    <div class="snow" data-snow="40"></div>
+    <div class="spark" data-spark="16"></div>
+    <div class="fv-bar"><a href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener"><img src="images/logo-white.png" alt="ななぷれselectshop" width="866" height="768"></a><span>楽天市場店</span></div>
     <div class="fv-head">
-      <p class="emb">RAKUTEN SHOP OF THE YEAR<b>2026</b></p>
+      <p class="emb">RAKUTEN<span class="big">SHOP OF<br>THE YEAR</span><b>2026</b></p>
       <h1 class="fv-title">投票受付中</h1>
       <p class="fv-dl">投票は<b>11.30</b>(月)09:59まで</p>
     </div>
@@ -276,34 +298,44 @@ a{color:inherit;text-decoration:none}
     <div class="stage" aria-hidden="true">
       <p class="pop">THANK YOU!</p>
       <div class="burst" data-burst="12"></div>
-      <svg class="watch" viewBox="0 0 240 320">
+      <div class="slotwin"><div class="env"><svg viewBox="0 0 58 40"><rect x="1" y="1" width="56" height="38" rx="3" fill="#ffffff" stroke="#cfd9e6" stroke-width="1.5"/><path d="M2 3 L29 23 L56 3" fill="none" stroke="#cfd9e6" stroke-width="1.5"/><circle cx="29" cy="23" r="7" fill="#d7263d"/><path d="M29 27.2s-3.2-2-4-3.8c-.6-1.5.3-3 1.8-3 .9 0 1.5.5 2.2 1.3.7-.8 1.3-1.3 2.2-1.3 1.5 0 2.4 1.5 1.8 3-.8 1.8-4 3.8-4 3.8z" fill="#fff"/></svg></div></div>
+      <svg class="gbox" viewBox="0 0 260 230">
         <defs>
-          <linearGradient id="wSilver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#c9d6e5"/><stop offset="1" stop-color="#7f95ad"/></linearGradient>
-          <radialGradient id="wDial" cx=".45" cy=".35" r=".75"><stop offset="0" stop-color="#1f4f8f"/><stop offset=".7" stop-color="#0b2e57"/><stop offset="1" stop-color="#061a33"/></radialGradient>
-          <linearGradient id="wStrap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a2546"/><stop offset=".5" stop-color="#14396b"/><stop offset="1" stop-color="#0a2546"/></linearGradient>
+          <linearGradient id="gFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a63c9"/><stop offset="1" stop-color="#123f94"/></linearGradient>
+          <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5b8fe6"/><stop offset="1" stop-color="#2a63c9"/></linearGradient>
+          <linearGradient id="gSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0e3378"/><stop offset="1" stop-color="#0a2552"/></linearGradient>
+          <linearGradient id="gRib" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef4a5e"/><stop offset="1" stop-color="#b01b30"/></linearGradient>
         </defs>
-        <rect x="80" y="0" width="80" height="78" rx="10" fill="url(#wStrap)"/>
-        <rect x="80" y="242" width="80" height="78" rx="10" fill="url(#wStrap)"/>
-        <path d="M88 8v60M152 8v60M88 252v60M152 252v60" stroke="rgba(124,196,255,.35)" stroke-width="1.5" stroke-dasharray="4 4"/>
-        <rect x="220" y="147" width="16" height="26" rx="4" fill="url(#wSilver)"/>
-        <circle cx="120" cy="160" r="104" fill="url(#wSilver)"/>
-        <circle cx="120" cy="160" r="95" fill="#0a1a30"/>
-        <circle cx="120" cy="160" r="88" fill="url(#wDial)"/>
-        <circle class="glow" cx="120" cy="160" r="88" fill="none" stroke="#7cc4ff" stroke-width="4"/>
-        <g id="ticks" stroke="#ffffff" stroke-linecap="round"></g>
-        <text x="120" y="232" text-anchor="middle" font-family="Jost,sans-serif" font-weight="500" font-size="9" letter-spacing="2" fill="rgba(255,255,255,.75)">SHOP OF THE YEAR</text>
-        <g class="ok"><circle cx="120" cy="198" r="18" fill="#7cc4ff"/><path d="M112 198 l5.5 5.5 l11 -12" fill="none" stroke="#061a33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
-        <g class="hand hh"><line x1="120" y1="168" x2="120" y2="114" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/></g>
-        <g class="hand hm"><line x1="120" y1="170" x2="120" y2="90" stroke="#e3ecf6" stroke-width="4.5" stroke-linecap="round"/></g>
-        <g class="hand hs"><line x1="120" y1="178" x2="120" y2="82" stroke="#7cc4ff" stroke-width="2" stroke-linecap="round"/></g>
-        <circle cx="120" cy="160" r="6.5" fill="url(#wSilver)"/>
+        <ellipse cx="128" cy="222" rx="118" ry="7" fill="rgba(0,0,0,.4)"/>
+        <!-- 右側面 -->
+        <polygon points="184,70 228,44 228,188 184,214" fill="url(#gSide)"/>
+        <polygon points="184,128 228,102 228,120 184,146" fill="url(#gRib)"/>
+        <!-- 正面 -->
+        <rect x="24" y="70" width="160" height="144" rx="3" fill="url(#gFront)"/>
+        <rect x="130" y="70" width="20" height="144" fill="url(#gRib)"/>
+        <rect x="24" y="128" width="160" height="18" fill="url(#gRib)"/>
+        <text x="77" y="112" text-anchor="middle" font-family="Jost,sans-serif" font-weight="600" font-size="22" letter-spacing="3" fill="#ffffff">VOTE</text>
+        <text x="77" y="178" text-anchor="middle" font-family="Jost,sans-serif" font-weight="500" font-size="9" letter-spacing="1.6" fill="rgba(255,255,255,.8)">SHOP OF THE YEAR</text>
+        <text x="77" y="194" text-anchor="middle" font-family="Jost,sans-serif" font-weight="600" font-size="13" letter-spacing="2" fill="#cfe8ff">2026</text>
+        <!-- 天面と投入口 -->
+        <polygon points="24,70 184,70 228,44 68,44" fill="url(#gTop)"/>
+        <polygon points="130,70 150,70 194,44 174,44" fill="url(#gRib)"/>
+        <polygon points="48,64 112,64 120,58 56,58" fill="#061a33"/>
+        <line x1="49" y1="64.6" x2="111" y2="64.6" stroke="rgba(255,255,255,.45)" stroke-width="1.2"/>
+        <!-- リボンの結び目 -->
+        <g class="bow">
+          <path d="M196 44 C176 22,160 30,170 46 C176 54,190 50,196 44Z" fill="#e23347" stroke="#a3172a" stroke-width="1.5"/>
+          <path d="M196 44 C214 20,232 28,222 44 C216 54,202 50,196 44Z" fill="#e23347" stroke="#a3172a" stroke-width="1.5"/>
+          <path d="M194 46 L184 66 M198 46 L210 64" stroke="#c11f33" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="196" cy="44" r="6" fill="#b01b30"/>
+        </g>
       </svg>
     </div>
     <div class="fv-body">
       <p class="fv-lead">いつもご利用いただきありがとうございます</p>
-      <p class="fv-copy"><em>腕時計のななぷれ</em>に<br>あなたの一票を</p>
+      <p class="fv-copy"><em>ななぷれselectshop</em>に<br>あなたの一票を</p>
       <div class="fv-cta">
-        <a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a>
+        <a class="vote" data-vote href="#">ななぷれselectshopに投票する<span class="arw">▶</span></a>
         <p class="vote-note">楽天市場の投票ページが開きます</p>
       </div>
     </div>
@@ -321,12 +353,11 @@ a{color:inherit;text-decoration:none}
     <div class="letter">
       <div class="letter-top"><span class="en">MESSAGE</span><small>お客様へのお手紙</small><span class="seal">THANKS</span></div>
       <p class="to">お客様へ</p>
-      <p>いつも腕時計のななぷれ select shopをご利用いただき、誠にありがとうございます。11月1日より、楽天市場「ショップ・オブ・ザ・イヤー2026」の投票が始まりました。</p>
-      <p>ななぷれは、G-SHOCKやシチズン、ピエールラニエなど、毎日を一緒に過ごす腕時計をそろえているお店です。<mark>専門知識を持ったスタッフ</mark>が、お選びいただくところからご購入後まで対応しています。</p>
+      <p>ななぷれは、毎日を一緒に過ごす<mark>腕時計やバッグアクセサリー</mark>をそろえているお店です。</p>
       <p class="theme">ご購入から<br>アフターサポートまで</p>
       <p>「こんな時計を扱ってほしい」「こんな特集が見たい」など、ぜひ皆さまの声をお聞かせください。いただいたメッセージは、スタッフ一同の大きな励みになります。</p>
-      <p>腕時計のななぷれに、あなたの一票をお寄せいただけますと幸いです。</p>
-      <p class="sign"><small>2026年11月</small>腕時計のななぷれ select shop スタッフ一同</p>
+      <p>ななぷれselectshopに、あなたの一票をお寄せいただけますと幸いです。</p>
+      <p class="sign"><small>2026年11月</small>ななぷれselectshop スタッフ一同</p>
     </div>
   </section>
 
@@ -351,7 +382,7 @@ a{color:inherit;text-decoration:none}
     <div class="in">
       <div class="head" data-bg="WATCH">
         <span class="label">OUR SHOP</span>
-        <h2>腕時計のななぷれが<br>大切にしていること</h2>
+        <h2>ななぷれselectshopが<br>大切にしていること</h2>
         <p class="lead">毎日つけるものだから<br>選ぶときも、選んだあとも</p>
       </div>
       <div class="pts">
@@ -402,26 +433,50 @@ a{color:inherit;text-decoration:none}
       <ol class="steps">
         <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
         <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
-        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>ななぷれに一票と、ひとことメッセージを</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>ななぷれselectshopに一票と、ひとことメッセージを</p></div></li>
       </ol>
     </div>
   </section>
 
   <!-- ===== 締め ===== -->
   <section class="last" id="last">
-    <div class="spark" data-spark="18"></div>
+    <div class="snow" data-snow="26"></div>
+    <div class="spark" data-spark="10"></div>
     <p class="big" aria-hidden="true">THANK<br>YOU</p>
-    <h2><em>腕時計のななぷれ</em>に<br>あなたの一票を</h2>
-    <a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a>
+    <h2><em>ななぷれselectshop</em>に<br>あなたの一票を</h2>
+    <a class="vote" data-vote href="#">ななぷれselectshopに投票する<span class="arw">▶</span></a>
     <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイント！<br>合計10万名様に当たる！</p>
   </section>
 
   <!-- ===== 商品 ===== -->
   <section class="items">
     <div class="in">
+      <div class="watchbox" aria-hidden="true">
+        <svg class="watch" viewBox="0 0 240 320">
+          <defs>
+            <linearGradient id="wSilver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#c9d6e5"/><stop offset="1" stop-color="#7f95ad"/></linearGradient>
+            <radialGradient id="wDial" cx=".45" cy=".35" r=".75"><stop offset="0" stop-color="#1f4f8f"/><stop offset=".7" stop-color="#0b2e57"/><stop offset="1" stop-color="#061a33"/></radialGradient>
+            <linearGradient id="wStrap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a2546"/><stop offset=".5" stop-color="#14396b"/><stop offset="1" stop-color="#0a2546"/></linearGradient>
+          </defs>
+          <rect x="80" y="0" width="80" height="78" rx="10" fill="url(#wStrap)"/>
+          <rect x="80" y="242" width="80" height="78" rx="10" fill="url(#wStrap)"/>
+          <path d="M88 8v60M152 8v60M88 252v60M152 252v60" stroke="rgba(124,196,255,.35)" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <rect x="220" y="147" width="16" height="26" rx="4" fill="url(#wSilver)"/>
+          <circle cx="120" cy="160" r="104" fill="url(#wSilver)"/>
+          <circle cx="120" cy="160" r="95" fill="#0a1a30"/>
+          <circle cx="120" cy="160" r="88" fill="url(#wDial)"/>
+          <circle class="glow" cx="120" cy="160" r="88" fill="none" stroke="#7cc4ff" stroke-width="4"/>
+          <g id="ticks" stroke="#ffffff" stroke-linecap="round"></g>
+          <text x="120" y="214" text-anchor="middle" font-family="Jost,sans-serif" font-weight="500" font-size="9" letter-spacing="2" fill="rgba(255,255,255,.75)">SHOP OF THE YEAR</text>
+          <g class="hand hh"><line x1="120" y1="168" x2="120" y2="114" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/></g>
+          <g class="hand hm"><line x1="120" y1="170" x2="120" y2="90" stroke="#e3ecf6" stroke-width="4.5" stroke-linecap="round"/></g>
+          <g class="hand hs"><line x1="120" y1="178" x2="120" y2="82" stroke="#7cc4ff" stroke-width="2" stroke-linecap="round"/></g>
+          <circle cx="120" cy="160" r="6.5" fill="url(#wSilver)"/>
+        </svg>
+      </div>
       <div class="head" data-bg="PICK UP">
         <span class="label">PICK UP</span>
-        <h2>ななぷれの<br>おすすめ</h2>
+        <h2>ななぷれselectshopの<br>おすすめ</h2>
         <p class="lead">はじめての方にも、ぜひ一度<br>手に取っていただきたい時計です</p>
       </div>
 
@@ -444,7 +499,7 @@ a{color:inherit;text-decoration:none}
       <p class="price-nt">※価格は2026年11月2日時点</p>
 
       <div class="links">
-        <a class="btn" href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener">腕時計のななぷれ トップへ</a>
+        <a class="btn" href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener">ななぷれselectshop トップへ</a>
       </div>
     </div>
   </section>
@@ -452,7 +507,7 @@ a{color:inherit;text-decoration:none}
 </div>
 
 <!-- スマホ追従ボタン -->
-<div class="fixed" id="fixed"><a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a></div>
+<div class="fixed" id="fixed"><a class="vote" data-vote href="#">ななぷれselectshopに投票する<span class="arw">▶</span></a></div>
 
 <script>
 (function(){
@@ -494,9 +549,21 @@ a{color:inherit;text-decoration:none}
     ticks.appendChild(t);
   }
 
-  // 12時で止まった瞬間に広がる星（スカイ・白・シルバー）
+  // ふわふわ降る雪（落ちる距離はコンテナの高さに合わせる）
+  document.querySelectorAll('[data-snow]').forEach(function(box){
+    var h = box.offsetHeight + 40;
+    for (var i = 0; i < +box.dataset.snow; i++) {
+      var f = document.createElement('i'), sz = 3 + Math.random() * 6;
+      f.style.cssText = 'left:' + (Math.random() * 100) + '%;--s:' + sz + 'px;--o:' + (0.45 + Math.random() * 0.45) + ';--b:' + (sz > 7 ? 1 : 0) + 'px;--dx:' + (Math.random() * 60 - 30) + 'px;--fall:' + h + 'px' +
+        ';animation-duration:' + (9 + Math.random() * 9) + 's;animation-delay:' + (-Math.random() * 18) + 's';
+      box.appendChild(f);
+    }
+  });
+
+  // 封筒が入った瞬間にはじける、雪の結晶と星（白・赤・スカイ）
   function star(c){ return 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1.5l2.6 7.9 8.4.1-6.8 5 2.6 8-6.8-4.9-6.8 4.9 2.6-8L.8 9.5l8.4-.1z" fill="' + c + '"/></svg>') + '")'; }
-  var STARS = [star('#7cc4ff'), star('#ffffff'), star('#cfe8ff'), star('#b9c8da')];
+  function flake(c){ return 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="' + c + '" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7M9 4l3 2 3-2M9 20l3-2 3 2"/></svg>') + '")'; }
+  var STARS = [flake('#ffffff'), star('#ef4a5e'), flake('#cfe8ff'), star('#ffffff'), star('#7cc4ff')];
   document.querySelectorAll('[data-burst]').forEach(function(box){
     var n = +box.dataset.burst;
     for (var i = 0; i < n; i++) {
