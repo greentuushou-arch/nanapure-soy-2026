@@ -71,8 +71,8 @@ a{color:inherit;text-decoration:none}
 .emb .big{display:block;margin-top:6px;font-weight:600;font-size:clamp(46px,13.6vw,96px);line-height:1.02;letter-spacing:.04em;padding-left:.04em}
 .emb b{display:block;margin-top:6px;font-weight:600;font-size:clamp(62px,19vw,132px);line-height:1;letter-spacing:.04em;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
 .fv-title{margin-top:14px;white-space:nowrap;font-weight:900;font-size:clamp(34px,9.6vw,64px);line-height:1.15;letter-spacing:.08em;padding-left:.08em}
-.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:12px;background:#fff;color:var(--red-d);font-size:18px;font-weight:900;padding:6px 24px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
-.fv-dl b{font-family:var(--en);font-weight:600;font-size:32px;line-height:1;color:var(--red)}
+.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:12px;background:#fff;color:var(--navy);font-size:18px;font-weight:900;padding:6px 24px;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.fv-dl b{font-family:var(--en);font-weight:600;font-size:32px;line-height:1;color:var(--navy)}
 .fv-pts{position:relative;z-index:3;padding:26px 20px 0}
 .fv-pt{border:1.5px solid var(--sky);border-radius:14px;padding:20px 10px 16px;text-align:center;line-height:1.5;letter-spacing:0;background:rgba(6,26,51,.5)}
 .fv-pt .l1{white-space:nowrap;font-size:clamp(14px,4.3vw,21px);font-weight:700;letter-spacing:.03em;color:var(--sky)}
@@ -101,9 +101,7 @@ a{color:inherit;text-decoration:none}
 /* ---------- 投票アニメ：リボンをかけたギフトボックス型の投票箱に、封筒がスッと入る ---------- */
 .stage{position:relative;z-index:3;height:350px;margin-top:6px}
 .gbox{position:absolute;left:50%;bottom:16px;width:260px;height:230px;margin-left:-130px;overflow:visible;transform-origin:50% 100%;animation:gbump 5s ease-in-out infinite}
-.gbox .bow{transform-box:view-box;transform-origin:196px 44px;animation:bow 5s ease-in-out infinite}
 @keyframes gbump{0%,52%,100%{transform:scale(1)}56%{transform:scale(1.04,.95)}61%{transform:scale(.99,1.02)}66%{transform:scale(1)}}
-@keyframes bow{0%,52%,100%{transform:rotate(0) scale(1)}56%{transform:rotate(-10deg) scale(1.12)}62%{transform:rotate(7deg) scale(1)}68%{transform:rotate(0)}}
 /* 投入口の中心（SVG上 x84・y61）より下の封筒は見えないように切り抜く */
 .slotwin{position:absolute;left:calc(50% - 46px - 45px);bottom:185px;width:90px;height:150px;overflow:hidden;z-index:4}
 .env{position:absolute;left:50%;bottom:0;width:58px;height:40px;margin-left:-29px;animation:env 5s ease-in-out infinite}
@@ -114,8 +112,6 @@ a{color:inherit;text-decoration:none}
   30%,40%{transform:translateY(-26px) rotate(0)}
   52%,100%{transform:translateY(48px) rotate(0);opacity:1}
 }
-.pop{position:absolute;left:50%;top:6px;z-index:5;font-family:var(--en);font-weight:600;font-size:46px;line-height:1;letter-spacing:.06em;color:#fff;text-shadow:0 0 18px rgba(215,38,61,.7);transform:translateX(-50%);opacity:0;animation:pop 5s infinite;white-space:nowrap}
-@keyframes pop{0%,52%{opacity:0;transform:translateX(-50%) scale(.6);animation-timing-function:cubic-bezier(.2,.8,.3,1)}57%{opacity:1;transform:translateX(-50%) scale(1)}84%{opacity:1;transform:translateX(-50%) scale(1);animation-timing-function:linear}100%{opacity:0;transform:translateX(-50%) scale(1)}}
 .burst{position:absolute;left:calc(50% - 46px);bottom:185px;z-index:5;width:0;height:0}
 .burst i{position:absolute;left:0;top:0;width:var(--sz,20px);height:var(--sz,20px);margin:calc(var(--sz,20px) / -2) 0 0 calc(var(--sz,20px) / -2);background:var(--img) center/contain no-repeat;opacity:0;animation:burst 5s linear infinite}
 @keyframes burst{0%,52%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}54%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
@@ -231,7 +227,14 @@ a{color:inherit;text-decoration:none}
 .it .price{font-family:var(--en);font-weight:500;font-size:20px;color:var(--blue-d);margin-top:2px}
 .it .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-2)}
 .price-nt{margin-top:14px;font-size:14px;color:var(--ink-2);text-align:right}
-.links{margin-top:46px}
+.topics{display:grid;grid-template-columns:1fr 1fr;gap:24px 14px}
+.tp{display:block}
+.tp .ph{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:6px;background:var(--line)}
+.tp .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tp:hover .ph img{transform:scale(1.04)}
+.tp h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:10px}
+.tp h4::after{content:" →";font-family:var(--en);color:var(--red)}
+.links{margin-top:46px;display:grid;gap:14px}
 .btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 26px;background:var(--navy);color:#fff;border-radius:999px;font-weight:700;font-size:18px;letter-spacing:.08em;transition:background .25s}
 .btn::after{content:"→";font-family:var(--en);color:#ff8a98}
 .btn:hover{background:var(--red)}
@@ -269,8 +272,8 @@ a{color:inherit;text-decoration:none}
   .wrap{padding-bottom:0}
 }
 @media (prefers-reduced-motion:reduce){
-  .vote.np-shine-play::after,.spark i,.watch .hand,.watch .glow,.gbox,.gbox .bow,.env{animation:none}
-  .spark,.snow,.burst,.pop{display:none}
+  .vote.np-shine-play::after,.spark i,.watch .hand,.watch .glow,.gbox,.env{animation:none}
+  .spark,.snow,.burst{display:none}
 }
 </style>
 </head>
@@ -296,7 +299,6 @@ a{color:inherit;text-decoration:none}
       </div>
     </div>
     <div class="stage" aria-hidden="true">
-      <p class="pop">THANK YOU!</p>
       <div class="burst" data-burst="12"></div>
       <div class="slotwin"><div class="env"><svg viewBox="0 0 58 40"><rect x="1" y="1" width="56" height="38" rx="3" fill="#ffffff" stroke="#cfd9e6" stroke-width="1.5"/><path d="M2 3 L29 23 L56 3" fill="none" stroke="#cfd9e6" stroke-width="1.5"/><circle cx="29" cy="23" r="7" fill="#d7263d"/><path d="M29 27.2s-3.2-2-4-3.8c-.6-1.5.3-3 1.8-3 .9 0 1.5.5 2.2 1.3.7-.8 1.3-1.3 2.2-1.3 1.5 0 2.4 1.5 1.8 3-.8 1.8-4 3.8-4 3.8z" fill="#fff"/></svg></div></div>
       <svg class="gbox" viewBox="0 0 260 230">
@@ -322,13 +324,6 @@ a{color:inherit;text-decoration:none}
         <polygon points="130,70 150,70 194,44 174,44" fill="url(#gRib)"/>
         <polygon points="48,64 112,64 120,58 56,58" fill="#061a33"/>
         <line x1="49" y1="64.6" x2="111" y2="64.6" stroke="rgba(255,255,255,.45)" stroke-width="1.2"/>
-        <!-- リボンの結び目 -->
-        <g class="bow">
-          <path d="M196 44 C176 22,160 30,170 46 C176 54,190 50,196 44Z" fill="#e23347" stroke="#a3172a" stroke-width="1.5"/>
-          <path d="M196 44 C214 20,232 28,222 44 C216 54,202 50,196 44Z" fill="#e23347" stroke="#a3172a" stroke-width="1.5"/>
-          <path d="M194 46 L184 66 M198 46 L210 64" stroke="#c11f33" stroke-width="5" stroke-linecap="round"/>
-          <circle cx="196" cy="44" r="6" fill="#b01b30"/>
-        </g>
       </svg>
     </div>
     <div class="fv-body">
@@ -498,7 +493,20 @@ a{color:inherit;text-decoration:none}
       </div>
       <p class="price-nt">※価格は2026年11月2日時点</p>
 
+      <h3 class="sub-head mt"><span class="en">TOPICS</span><b>特集・読みもの</b></h3>
+      <div class="topics">
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/compactbag/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/compactbag.jpg" alt="キャンプ・アウトドアにおすすめのバッグ" loading="lazy"></span><h4>キャンプ・アウトドアにおすすめのバッグ</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/autumnwatch/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/autumnwatch.jpg" alt="秋服に似合うレディース腕時計" loading="lazy"></span><h4>秋服に似合うレディース腕時計</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/characterwatch/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/characterwatch.jpg" alt="大人のキャラクター＆コラボ腕時計特集" loading="lazy"></span><h4>大人のキャラクター＆コラボ腕時計特集</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/anyaeyes/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/anyaeyes.jpg" alt="お目めのついたバッグ＆小物" loading="lazy"></span><h4>お目めのついたバッグ＆小物</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/brand/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/brand.jpg" alt="人気のレディース腕時計 注目ブランド厳選" loading="lazy"></span><h4>人気のレディース腕時計 注目ブランド厳選</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/uggearmuffs/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/uggearmuffs.jpg" alt="クリスマスプレゼントに UGGのイヤーマフ" loading="lazy"></span><h4>クリスマスプレゼントに UGGのイヤーマフ</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/kidswatch/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/kidswatch.jpg" alt="キッズチプカシ 子供用腕時計" loading="lazy"></span><h4>キッズチプカシ 子供用腕時計</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/7ple/contents/topics/coach/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/coach.jpg" alt="COACHの並行輸入腕時計 2万円以内で" loading="lazy"></span><h4>COACHの並行輸入腕時計 2万円以内で</h4></a>
+      </div>
+
       <div class="links">
+        <a class="btn" href="https://www.rakuten.co.jp/7ple/contents/topicslist/" target="_blank" rel="noopener">トピックスをすべて見る</a>
         <a class="btn" href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener">ななぷれselectshop トップへ</a>
       </div>
     </div>
