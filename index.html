@@ -166,10 +166,8 @@ a{color:inherit;text-decoration:none}
 /* ---------- ななぷれのこと ---------- */
 .good{padding:72px 0 64px}
 .pts{display:grid;gap:18px}
-.pt{position:relative;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line)}
-.pt .ph{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#fff}
-.pt .ph img{width:100%;height:100%;object-fit:contain}
-.pt .no{position:absolute;top:0;left:0;z-index:2;background:var(--red);color:#fff;font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.06em;padding:6px 16px}
+.pt{position:relative;display:grid;grid-template-columns:62px 1fr;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line)}
+.pt .no{display:flex;align-items:center;justify-content:center;background:var(--red);color:#fff;font-family:var(--en);font-weight:500;font-size:24px;letter-spacing:.04em}
 .pt .tx{padding:20px 20px 24px}
 .pt .tx .en{display:block;font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--red)}
 .pt h3{font-weight:900;font-size:21px;line-height:1.5;margin-top:4px}
@@ -259,7 +257,6 @@ a{color:inherit;text-decoration:none}
   .letter p{font-size:19px}
   .num .v{font-size:70px}
   .pts{grid-template-columns:repeat(3,1fr);gap:14px}
-  .pt .ph{aspect-ratio:1/1}
   .pt h3{font-size:19px}
   .bb{font-size:19px}
   .bb:nth-child(odd){margin-right:140px}
@@ -383,20 +380,32 @@ a{color:inherit;text-decoration:none}
       <div class="pts">
         <article class="pt">
           <span class="no">01</span>
-          <span class="ph"><img src="images/gst-s100g-1bdr.jpg" alt="G-SHOCK Gスチール GST-S100G" loading="lazy"></span>
           <div class="tx"><span class="en">BRANDS</span><h3>人気ブランドがそろう</h3><p>G-SHOCKやシチズン、オリエント、ピエールラニエなど。毎日使いからギフトまで選べます。</p></div>
         </article>
         <article class="pt">
           <span class="no">02</span>
-          <span class="ph"><img src="images/p150h900.jpg" alt="ピエールラニエ オーストレイル" loading="lazy"></span>
           <div class="tx"><span class="en">STAFF</span><h3>専門スタッフが対応</h3><p>時計の知識を持ったスタッフが、ご購入からアフターサポートまで対応します。</p></div>
         </article>
         <article class="pt">
           <span class="no">03</span>
-          <span class="ph"><img src="images/rn-ak0702y.jpg" alt="オリエント バンビーノ" loading="lazy"></span>
           <div class="tx"><span class="en">WARRANTY</span><h3>長く使える安心を</h3><p>7年保証が付いたモデルなど、長く愛用していただける時計をお届けしています。</p></div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== 投票方法 ===== -->
+  <section class="how">
+    <div class="in">
+      <div class="head" data-bg="VOTE">
+        <span class="label">HOW TO VOTE</span>
+        <h2>投票はかんたん<br>3ステップ</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
+        <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>ななぷれselectshopに一票と、ひとことメッセージを</p></div></li>
+      </ol>
     </div>
   </section>
 
@@ -415,21 +424,6 @@ a{color:inherit;text-decoration:none}
         <p class="bb">これからも応援しています</p>
       </div>
       <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
-    </div>
-  </section>
-
-  <!-- ===== 投票方法 ===== -->
-  <section class="how">
-    <div class="in">
-      <div class="head" data-bg="VOTE">
-        <span class="label">HOW TO VOTE</span>
-        <h2>投票はかんたん<br>3ステップ</h2>
-      </div>
-      <ol class="steps">
-        <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
-        <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
-        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>ななぷれselectshopに一票と、ひとことメッセージを</p></div></li>
-      </ol>
     </div>
   </section>
 
