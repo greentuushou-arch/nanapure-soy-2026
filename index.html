@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>腕時計のななぷれへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ロゴの紺を軸に、ロイヤルブルー×スカイ×シルバー */
+  --navy:#0b2e57;
+  --night:#061a33;
+  --blue:#1f5fd6;
+  --blue-d:#123f94;
+  --sky:#7cc4ff;
+  --sky-l:#cfe8ff;
+  --ice:#eef5fd;
+  --paper:#f5f8fc;
+  --ink:#11223a;
+  --ink-2:#56657a;
+  --line:rgba(17,34,58,.12);
+  --sans:"Noto Sans JP",sans-serif;
+  --en:"Jost","Noto Sans JP",sans-serif;
+  --silver:linear-gradient(180deg,#ffffff 0%,#e3ecf6 35%,#b9c8da 68%,#8fa3ba 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--navy);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:750px;margin:0 auto;background:var(--paper);overflow:hidden;padding-bottom:88px}
+.in{padding:0 22px}
+.en{font-family:var(--en)}
+
+/* ---------- 共通見出し（文字は大きめ） ---------- */
+.head{text-align:center;margin-bottom:40px;position:relative}
+.head>*{position:relative;z-index:1}
+.head[data-bg]::before{content:attr(data-bg);position:absolute;left:50%;top:-30px;z-index:0;transform:translateX(-50%);font-family:var(--en);font-weight:600;font-size:clamp(72px,22vw,146px);line-height:1;letter-spacing:.02em;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(31,95,214,.14);pointer-events:none}
+.dark .head[data-bg]::before{-webkit-text-stroke-color:rgba(124,196,255,.24)}
+.label{display:inline-flex;align-items:center;gap:14px;font-family:var(--en);font-weight:500;font-size:17px;letter-spacing:.3em;color:var(--blue)}
+.label::before,.label::after{content:"";width:28px;height:1.5px;background:currentColor}
+.head h2{font-weight:900;font-size:32px;line-height:1.5;letter-spacing:.06em;margin-top:14px}
+.head .lead{margin-top:16px;font-size:18px;color:var(--ink-2)}
+.dark .label{color:var(--sky)}
+.dark .head h2{color:#fff}
+.dark .head .lead{color:rgba(255,255,255,.75)}
+
+/* ---------- 投票ボタン（シャイン） ---------- */
+.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:540px;min-height:78px;margin:0 auto;padding:0 20px;border-radius:999px;background:var(--silver);color:var(--navy);font-weight:700;font-size:clamp(17px,5vw,21px);letter-spacing:.08em;white-space:nowrap;box-shadow:0 5px 0 #6f86a1,0 12px 26px rgba(0,0,0,.35);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vote:active{transform:translateY(3px);box-shadow:0 2px 0 #6f86a1}
+.vote .arw{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-size:14px;flex:none}
+.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.9),transparent);transform:skewX(-20deg);pointer-events:none}
+.vote.np-shine-play::after{animation:shine 1.6s ease-in-out}
+@keyframes shine{to{left:130%}}
+.vote-note{text-align:center;font-size:17px;color:var(--ink-2);margin-top:14px;line-height:1.7}
+
+/* ---------- FV ---------- */
+.fv{position:relative;background:radial-gradient(120% 60% at 50% 50%,#173f78 0%,#0b2e57 42%,#061a33 100%);color:#fff;overflow:hidden}
+.fv-bar{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid rgba(124,196,255,.3)}
+.fv-bar a{display:flex;align-items:center;gap:10px}
+.fv-bar img{height:58px;width:auto}
+.fv-bar span{font-size:15px;letter-spacing:.12em;color:rgba(255,255,255,.7)}
+.fv-head{position:relative;z-index:4;text-align:center;padding:36px 12px 0}
+.emb{font-family:var(--en);font-weight:500;font-size:clamp(18px,5.3vw,32px);line-height:1.2;letter-spacing:.12em;padding-left:.12em;white-space:nowrap}
+.emb b{display:block;margin-top:2px;font-weight:600;font-size:2.7em;line-height:1;letter-spacing:.04em;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fv-title{margin-top:12px;white-space:nowrap;font-weight:900;font-size:clamp(54px,16.2vw,116px);line-height:1.1;letter-spacing:.02em}
+.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:14px;background:var(--sky);color:var(--night);font-size:19px;font-weight:900;padding:6px 24px;border-radius:999px}
+.fv-dl b{font-family:var(--en);font-weight:600;font-size:34px;line-height:1}
+.fv-pts{position:relative;z-index:3;padding:26px 20px 0}
+.fv-pt{border:1.5px solid var(--sky);border-radius:14px;padding:20px 10px 16px;text-align:center;line-height:1.5;letter-spacing:0;background:rgba(6,26,51,.5)}
+.fv-pt .l1{white-space:nowrap;font-size:clamp(14px,4.3vw,21px);font-weight:700;letter-spacing:.03em;color:var(--sky)}
+.fv-pt .l2{white-space:nowrap;font-size:clamp(15px,4.4vw,20px);font-weight:500;margin-top:4px}
+.fv-pt .l3{font-weight:900;font-size:clamp(24px,7vw,38px);line-height:1.35;margin-top:6px}
+.fv-pt .l3 .w{display:block;white-space:nowrap}
+.fv-pt .l3 .p{font-family:var(--en);font-weight:600;font-size:1.45em;line-height:1;color:var(--sky);letter-spacing:.01em}
+.fv-pt .l3 .p small{font-family:var(--sans);font-size:.6em}
+.fv-pt .l3 .w b{font-family:var(--en);font-weight:600;font-size:1.15em;color:var(--sky)}
+.fv-pt .nt{white-space:nowrap;font-size:clamp(12px,3.4vw,15px);color:rgba(255,255,255,.65);margin-top:10px}
+.fv-body{position:relative;z-index:3;padding:0 20px 52px}
+.fv-lead{margin-top:30px;text-align:center;white-space:nowrap;font-weight:700;font-size:clamp(15px,4.3vw,28px);letter-spacing:.02em;line-height:1.5;color:rgba(255,255,255,.92)}
+.fv-copy{text-align:center;margin-top:8px;font-weight:900;font-size:clamp(25px,7vw,42px);line-height:1.55;letter-spacing:.04em}
+.fv-copy em{font-style:normal;color:var(--sky)}
+.fv-cta{margin-top:30px}
+.fv-cta .vote-note{color:rgba(255,255,255,.75)}
+/* 星のまたたき */
+.spark{position:absolute;inset:0;z-index:2;pointer-events:none}
+.spark i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;box-shadow:0 0 8px 2px rgba(124,196,255,.85);opacity:0;animation:twinkle ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+
+/* ---------- 投票アニメ：腕時計の針がくるくる回って12時でピタッ → THANK YOU! ---------- */
+.stage{position:relative;z-index:3;height:350px;margin-top:8px}
+.watch{position:absolute;left:50%;top:58px;width:216px;height:288px;margin-left:-108px;overflow:visible;filter:drop-shadow(0 18px 26px rgba(0,0,0,.45))}
+.watch .hand{transform-box:view-box;transform-origin:120px 160px}
+.watch .hh{animation:spinH 5s infinite}
+.watch .hm{animation:spinM 5s infinite}
+.watch .hs{animation:spinS 5s infinite}
+@keyframes spinH{0%{transform:rotate(0);animation-timing-function:cubic-bezier(.25,.6,.2,1)}46%,100%{transform:rotate(720deg)}}
+@keyframes spinM{0%{transform:rotate(0);animation-timing-function:cubic-bezier(.25,.6,.2,1)}46%,100%{transform:rotate(2160deg)}}
+@keyframes spinS{0%{transform:rotate(0);animation-timing-function:cubic-bezier(.25,.6,.2,1)}46%,100%{transform:rotate(3600deg)}}
+.watch .glow{opacity:0;animation:glow 5s infinite}
+@keyframes glow{0%,45%{opacity:0}50%{opacity:1}64%{opacity:.35}86%{opacity:.35}100%{opacity:0}}
+.watch .ok{opacity:0;transform-box:view-box;transform-origin:120px 198px;animation:ok 5s infinite}
+@keyframes ok{0%,46%{opacity:0;transform:scale(.4);animation-timing-function:cubic-bezier(.2,.8,.3,1)}52%{opacity:1;transform:scale(1)}84%{opacity:1;transform:scale(1);animation-timing-function:linear}100%{opacity:0;transform:scale(1)}}
+.pop{position:absolute;left:50%;top:0;z-index:5;font-family:var(--en);font-weight:600;font-size:48px;line-height:1;letter-spacing:.06em;color:#fff;text-shadow:0 0 18px rgba(124,196,255,.8);transform:translateX(-50%);opacity:0;animation:pop 5s infinite;white-space:nowrap}
+@keyframes pop{0%,46%{opacity:0;transform:translateX(-50%) scale(.6);animation-timing-function:cubic-bezier(.2,.8,.3,1)}52%{opacity:1;transform:translateX(-50%) scale(1)}84%{opacity:1;transform:translateX(-50%) scale(1);animation-timing-function:linear}100%{opacity:0;transform:translateX(-50%) scale(1)}}
+.burst{position:absolute;left:50%;top:178px;z-index:2;width:0;height:0}
+.burst i{position:absolute;left:0;top:0;width:var(--sz,20px);height:var(--sz,20px);margin:calc(var(--sz,20px) / -2) 0 0 calc(var(--sz,20px) / -2);background:var(--img) center/contain no-repeat;opacity:0;animation:burst 5s linear infinite}
+@keyframes burst{0%,46%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}48%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
+
+/* ---------- 投票スタート ---------- */
+.start{padding:62px 18px 52px;text-align:center}
+.start h2{font-weight:900;font-size:clamp(22px,6.4vw,32px);line-height:1.65;letter-spacing:.04em;margin-top:18px}
+.start h2 b{color:var(--blue)}
+.period{display:inline-block;margin-top:24px;border-top:1.5px solid var(--sky);border-bottom:1.5px solid var(--sky);padding:12px 6px;line-height:1.7}
+.period dt{font-family:var(--en);font-weight:500;font-size:16px;color:var(--blue);letter-spacing:.3em}
+.period dd{white-space:nowrap;font-size:clamp(14px,4.2vw,19px);font-weight:700;letter-spacing:0}
+
+/* ---------- お手紙 ---------- */
+.letter-sec{padding:0 14px 66px}
+.letter{position:relative;background:#fff;border-radius:6px;padding:0 22px 40px;box-shadow:0 16px 40px rgba(11,46,87,.1)}
+.letter-top{position:relative;margin:0 -22px 42px;background:var(--navy);color:#fff;text-align:center;padding:26px 16px 46px;border-radius:6px 6px 0 0}
+.letter-top .en{display:block;font-weight:300;font-size:32px;letter-spacing:.3em;line-height:1.2;padding-left:.3em}
+.letter-top small{display:block;font-size:16px;letter-spacing:.14em;color:rgba(255,255,255,.8);margin-top:6px}
+.letter-top .seal{position:absolute;left:50%;bottom:-34px;display:grid;place-items:center;width:68px;height:68px;margin-left:-34px;border-radius:50%;background:var(--silver);color:var(--navy);font-family:var(--en);font-weight:600;font-size:13px;letter-spacing:.04em;box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.letter p{font-size:18px;font-weight:500;line-height:2.05}
+.letter p+p{margin-top:1.1em}
+.letter .to{font-size:19px;font-weight:700;color:var(--blue)}
+.letter mark{background:linear-gradient(transparent 62%,var(--sky-l) 62%);color:inherit}
+.letter .theme{margin:1.4em 0;padding:16px 8px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:900;font-size:21px;line-height:1.7;color:var(--blue-d)}
+.letter .sign{margin-top:1.6em;text-align:right}
+.letter .sign small{display:block;font-size:16px;color:var(--ink-2)}
+
+/* ---------- ありがとうございます ---------- */
+.nums{background:var(--night);color:#fff;padding:72px 0 66px}
+.nums .msg{margin:-6px 0 34px;text-align:center;font-weight:900;font-size:22px;line-height:1.9;letter-spacing:.06em}
+.num-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.num{border:1.5px solid rgba(124,196,255,.4);border-radius:16px;padding:28px 8px 22px;text-align:center;line-height:1.4}
+.num .v{display:block;white-space:nowrap;font-family:var(--en);font-weight:500;font-size:54px;line-height:1.05;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
+.num .v small{font-family:var(--sans);font-size:.34em;font-weight:700}
+.num .l{display:block;margin-top:12px;font-size:17px;font-weight:700}
+.num .s{display:block;margin-top:4px;font-family:var(--en);font-size:14px;letter-spacing:.14em;color:rgba(255,255,255,.5)}
+.nums .nt{margin-top:16px;text-align:center;font-size:15px;color:rgba(255,255,255,.55)}
+
+/* ---------- ななぷれのこと ---------- */
+.good{padding:72px 0 64px}
+.pts{display:grid;gap:18px}
+.pt{position:relative;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line)}
+.pt .ph{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#fff}
+.pt .ph img{width:100%;height:100%;object-fit:contain}
+.pt .no{position:absolute;top:0;left:0;z-index:2;background:var(--navy);color:#fff;font-family:var(--en);font-weight:500;font-size:22px;letter-spacing:.06em;padding:6px 16px}
+.pt .tx{padding:20px 20px 24px}
+.pt .tx .en{display:block;font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--blue)}
+.pt h3{font-weight:900;font-size:21px;line-height:1.5;margin-top:4px}
+.pt p{font-size:17px;color:var(--ink-2);line-height:1.8;margin-top:8px}
+
+/* ---------- 声 ---------- */
+.voice{background:var(--ice);padding:72px 0 64px}
+.bubbles{display:grid;gap:14px}
+.bb{position:relative;background:#fff;border-radius:24px;padding:16px 22px;font-weight:500;font-size:18px;line-height:1.7}
+.bb::after{content:"";position:absolute;bottom:-10px;width:18px;height:14px;background:#fff;clip-path:polygon(0 0,100% 0,30% 100%)}
+.bb:nth-child(odd){margin-right:18px}
+.bb:nth-child(odd)::after{left:36px}
+.bb:nth-child(even){margin-left:18px}
+.bb:nth-child(even)::after{right:36px;transform:scaleX(-1)}
+.voice .after{text-align:center;margin-top:34px;font-size:18px;line-height:2}
+
+/* ---------- 投票方法 ---------- */
+.how{padding:72px 0 62px}
+.steps{display:grid;gap:12px}
+.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;background:#fff;padding:20px;border-left:4px solid var(--blue);border-radius:4px}
+.steps .sn{font-family:var(--en);font-weight:500;font-size:15px;letter-spacing:.2em;color:var(--blue);text-align:center;line-height:1}
+.steps .sn b{display:block;font-weight:400;font-size:44px;color:var(--ink);letter-spacing:0;margin-top:4px}
+.steps h3{font-size:19px;font-weight:900;line-height:1.5}
+.steps p{font-size:17px;color:var(--ink-2);line-height:1.7;margin-top:2px}
+
+/* ---------- 締め ---------- */
+.last{position:relative;background:radial-gradient(120% 80% at 50% 100%,#173f78 0%,#0b2e57 50%,#061a33 100%);color:#fff;padding:72px 22px 66px;text-align:center;overflow:hidden}
+.last .big{position:relative;z-index:3;font-family:var(--en);font-weight:600;font-size:clamp(54px,15.6vw,108px);line-height:.95;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.5px var(--sky)}
+.last h2{position:relative;z-index:3;font-weight:900;font-size:clamp(25px,7vw,34px);line-height:1.6;letter-spacing:.06em;margin:24px 0 32px}
+.last h2 em{font-style:normal;color:var(--sky)}
+.last .vote,.last .vote-note{position:relative;z-index:3}
+.last .vote-note{color:rgba(255,255,255,.8)}
+
+/* ---------- 商品 ---------- */
+.items{background:#fff;padding:72px 0 64px}
+.sub-head{text-align:center;margin:0 0 24px}
+.sub-head .en{display:block;font-weight:500;font-size:16px;letter-spacing:.3em;color:var(--blue)}
+.sub-head b{display:block;font-weight:900;font-size:23px;letter-spacing:.06em;margin-top:2px}
+.sub-head.mt{margin-top:60px}
+.premium{display:grid;gap:18px}
+.pm{display:block;background:var(--navy);color:#fff;border-radius:6px;overflow:hidden}
+.pm .ph{position:relative;display:block;aspect-ratio:1/1;overflow:hidden;background:#fff}
+.pm .ph img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.pm:hover .ph img{transform:scale(1.04)}
+.pm .tx{padding:18px 20px 22px}
+.pm .br{font-family:var(--en);font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--sky)}
+.pm h4{font-size:18px;font-weight:700;margin-top:6px;line-height:1.6}
+.pm .price{font-family:var(--en);font-weight:500;font-size:24px;color:var(--sky);margin-top:6px}
+.pm .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:rgba(255,255,255,.75)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 14px}
+.it .ph{display:block;aspect-ratio:1/1;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:6px}
+.it .ph img{width:100%;height:100%;object-fit:contain}
+.it .tg{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--blue);border:1.5px solid var(--blue);border-radius:4px;padding:0 8px;line-height:1.7}
+.it h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:6px}
+.it .price{font-family:var(--en);font-weight:500;font-size:20px;color:var(--blue-d);margin-top:2px}
+.it .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-2)}
+.price-nt{margin-top:14px;font-size:14px;color:var(--ink-2);text-align:right}
+.links{margin-top:46px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 26px;background:var(--navy);color:#fff;border-radius:999px;font-weight:700;font-size:18px;letter-spacing:.08em;transition:background .25s}
+.btn::after{content:"→";font-family:var(--en);color:var(--sky)}
+.btn:hover{background:var(--blue)}
+
+/* ---------- 追従ボタン ---------- */
+.fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(6,26,51,.94);transform:translateY(110%);transition:transform .35s}
+.fixed.on{transform:none}
+.fixed .vote{min-height:58px;box-shadow:0 3px 0 #6f86a1}
+
+@media (min-width:768px){
+  .in{padding:0 56px}
+  .fv-bar{padding:18px 36px}
+  .fv-head{padding-top:50px}
+  .fv-dl{font-size:22px;padding:8px 32px}
+  .fv-dl b{font-size:40px}
+  .fv-pts{padding:30px 56px 0}
+  .fv-body{padding:0 56px 66px}
+  .stage{height:390px}
+  .watch{scale:1.12;transform-origin:50% 0}
+  .head h2{font-size:38px}
+  .letter-sec{padding:0 56px 72px}
+  .letter{padding:0 52px 52px}
+  .letter-top{margin:0 -52px 50px}
+  .letter p{font-size:19px}
+  .num .v{font-size:70px}
+  .pts{grid-template-columns:repeat(3,1fr);gap:14px}
+  .pt .ph{aspect-ratio:1/1}
+  .pt h3{font-size:19px}
+  .bb{font-size:19px}
+  .bb:nth-child(odd){margin-right:140px}
+  .bb:nth-child(even){margin-left:140px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .steps li{grid-template-columns:1fr;text-align:center;padding:28px 16px;border-left:0;border-top:4px solid var(--blue)}
+  .premium{grid-template-columns:repeat(3,1fr)}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .fixed{display:none}
+  .wrap{padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .vote.np-shine-play::after,.spark i,.watch .hand,.watch .glow{animation:none}
+  .spark,.burst,.pop{display:none}
+  .watch .ok{animation:none;opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===== FV ===== -->
+  <header class="fv" id="fv">
+    <div class="spark" data-spark="30"></div>
+    <div class="fv-bar"><a href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener"><img src="images/logo-white.png" alt="腕時計のななぷれ select shop" width="866" height="768"></a><span>楽天市場店</span></div>
+    <div class="fv-head">
+      <p class="emb">RAKUTEN SHOP OF THE YEAR<b>2026</b></p>
+      <h1 class="fv-title">投票受付中</h1>
+      <p class="fv-dl">投票は<b>11.30</b>(月)09:59まで</p>
+    </div>
+    <div class="fv-pts">
+      <div class="fv-pt">
+        <p class="l1">あなたの1票でベストショップが決まる！</p>
+        <p class="l2">お気に入りのショップに投票すると</p>
+        <p class="l3"><span class="w">最大<span class="p">10,000<small>ポイント</small></span>！</span><span class="w">合計<b>10</b>万名様に当たる！</span></p>
+        <p class="nt">※詳細は楽天市場の投票ページをご確認ください</p>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <p class="pop">THANK YOU!</p>
+      <div class="burst" data-burst="12"></div>
+      <svg class="watch" viewBox="0 0 240 320">
+        <defs>
+          <linearGradient id="wSilver" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#c9d6e5"/><stop offset="1" stop-color="#7f95ad"/></linearGradient>
+          <radialGradient id="wDial" cx=".45" cy=".35" r=".75"><stop offset="0" stop-color="#1f4f8f"/><stop offset=".7" stop-color="#0b2e57"/><stop offset="1" stop-color="#061a33"/></radialGradient>
+          <linearGradient id="wStrap" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a2546"/><stop offset=".5" stop-color="#14396b"/><stop offset="1" stop-color="#0a2546"/></linearGradient>
+        </defs>
+        <rect x="80" y="0" width="80" height="78" rx="10" fill="url(#wStrap)"/>
+        <rect x="80" y="242" width="80" height="78" rx="10" fill="url(#wStrap)"/>
+        <path d="M88 8v60M152 8v60M88 252v60M152 252v60" stroke="rgba(124,196,255,.35)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <rect x="220" y="147" width="16" height="26" rx="4" fill="url(#wSilver)"/>
+        <circle cx="120" cy="160" r="104" fill="url(#wSilver)"/>
+        <circle cx="120" cy="160" r="95" fill="#0a1a30"/>
+        <circle cx="120" cy="160" r="88" fill="url(#wDial)"/>
+        <circle class="glow" cx="120" cy="160" r="88" fill="none" stroke="#7cc4ff" stroke-width="4"/>
+        <g id="ticks" stroke="#ffffff" stroke-linecap="round"></g>
+        <text x="120" y="232" text-anchor="middle" font-family="Jost,sans-serif" font-weight="500" font-size="9" letter-spacing="2" fill="rgba(255,255,255,.75)">SHOP OF THE YEAR</text>
+        <g class="ok"><circle cx="120" cy="198" r="18" fill="#7cc4ff"/><path d="M112 198 l5.5 5.5 l11 -12" fill="none" stroke="#061a33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g class="hand hh"><line x1="120" y1="168" x2="120" y2="114" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/></g>
+        <g class="hand hm"><line x1="120" y1="170" x2="120" y2="90" stroke="#e3ecf6" stroke-width="4.5" stroke-linecap="round"/></g>
+        <g class="hand hs"><line x1="120" y1="178" x2="120" y2="82" stroke="#7cc4ff" stroke-width="2" stroke-linecap="round"/></g>
+        <circle cx="120" cy="160" r="6.5" fill="url(#wSilver)"/>
+      </svg>
+    </div>
+    <div class="fv-body">
+      <p class="fv-lead">いつもご利用いただきありがとうございます</p>
+      <p class="fv-copy"><em>腕時計のななぷれ</em>に<br>あなたの一票を</p>
+      <div class="fv-cta">
+        <a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a>
+        <p class="vote-note">楽天市場の投票ページが開きます</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 投票スタート ===== -->
+  <section class="start">
+    <span class="label">VOTING NOW</span>
+    <h2>楽天市場<br><b>ショップ・オブ・ザ・イヤー<br>2026</b> の投票が始まりました</h2>
+    <dl class="period"><dt>VOTING PERIOD</dt><dd>2026年11月1日(日)〜11月30日(月)09:59まで</dd></dl>
+  </section>
+
+  <!-- ===== お手紙 ===== -->
+  <section class="letter-sec">
+    <div class="letter">
+      <div class="letter-top"><span class="en">MESSAGE</span><small>お客様へのお手紙</small><span class="seal">THANKS</span></div>
+      <p class="to">お客様へ</p>
+      <p>いつも腕時計のななぷれ select shopをご利用いただき、誠にありがとうございます。11月1日より、楽天市場「ショップ・オブ・ザ・イヤー2026」の投票が始まりました。</p>
+      <p>ななぷれは、G-SHOCKやシチズン、ピエールラニエなど、毎日を一緒に過ごす腕時計をそろえているお店です。<mark>専門知識を持ったスタッフ</mark>が、お選びいただくところからご購入後まで対応しています。</p>
+      <p class="theme">ご購入から<br>アフターサポートまで</p>
+      <p>「こんな時計を扱ってほしい」「こんな特集が見たい」など、ぜひ皆さまの声をお聞かせください。いただいたメッセージは、スタッフ一同の大きな励みになります。</p>
+      <p>腕時計のななぷれに、あなたの一票をお寄せいただけますと幸いです。</p>
+      <p class="sign"><small>2026年11月</small>腕時計のななぷれ select shop スタッフ一同</p>
+    </div>
+  </section>
+
+  <!-- ===== ありがとうございます ===== -->
+  <section class="nums dark">
+    <div class="in">
+      <div class="head" data-bg="THANKS">
+        <span class="label">THANK YOU</span>
+        <h2>ありがとうございます</h2>
+      </div>
+      <p class="msg">たくさんの「ありがとう」に<br>支えられています</p>
+      <div class="num-grid">
+        <p class="num"><span class="v">4.77</span><span class="l">ショップ評価</span><span class="s">RATING</span></p>
+        <p class="num"><span class="v">1,842<small>件</small></span><span class="l">いただいたレビュー</span><span class="s">REVIEWS</span></p>
+      </div>
+      <p class="nt">※ショップ評価・レビュー件数は2026年11月2日時点</p>
+    </div>
+  </section>
+
+  <!-- ===== ななぷれのこと ===== -->
+  <section class="good">
+    <div class="in">
+      <div class="head" data-bg="WATCH">
+        <span class="label">OUR SHOP</span>
+        <h2>腕時計のななぷれが<br>大切にしていること</h2>
+        <p class="lead">毎日つけるものだから<br>選ぶときも、選んだあとも</p>
+      </div>
+      <div class="pts">
+        <article class="pt">
+          <span class="no">01</span>
+          <span class="ph"><img src="images/gst-s100g-1bdr.jpg" alt="G-SHOCK Gスチール GST-S100G" loading="lazy"></span>
+          <div class="tx"><span class="en">BRANDS</span><h3>人気ブランドがそろう</h3><p>G-SHOCKやシチズン、オリエント、ピエールラニエなど。毎日使いからギフトまで選べます。</p></div>
+        </article>
+        <article class="pt">
+          <span class="no">02</span>
+          <span class="ph"><img src="images/p150h900.jpg" alt="ピエールラニエ オーストレイル" loading="lazy"></span>
+          <div class="tx"><span class="en">STAFF</span><h3>専門スタッフが対応</h3><p>時計の知識を持ったスタッフが、ご購入からアフターサポートまで対応します。</p></div>
+        </article>
+        <article class="pt">
+          <span class="no">03</span>
+          <span class="ph"><img src="images/rn-ak0702y.jpg" alt="オリエント バンビーノ" loading="lazy"></span>
+          <div class="tx"><span class="en">WARRANTY</span><h3>長く使える安心を</h3><p>7年保証が付いたモデルなど、長く愛用していただける時計をお届けしています。</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== お声 ===== -->
+  <section class="voice">
+    <div class="in">
+      <div class="head" data-bg="VOICE">
+        <span class="label">YOUR VOICE</span>
+        <h2>皆さまのお声を<br>お聞かせください</h2>
+        <p class="lead">投票ページの応援メッセージ欄に<br>ひとことお寄せいただけるとうれしいです</p>
+      </div>
+      <div class="bubbles">
+        <p class="bb">時計選びの相談にのってもらえて安心</p>
+        <p class="bb">プレゼントに選んだら喜ばれました</p>
+        <p class="bb">こんな特集を、またやってほしい</p>
+        <p class="bb">これからも応援しています</p>
+      </div>
+      <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
+    </div>
+  </section>
+
+  <!-- ===== 投票方法 ===== -->
+  <section class="how">
+    <div class="in">
+      <div class="head" data-bg="VOTE">
+        <span class="label">HOW TO VOTE</span>
+        <h2>投票はかんたん<br>3ステップ</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
+        <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>ななぷれに一票と、ひとことメッセージを</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== 締め ===== -->
+  <section class="last" id="last">
+    <div class="spark" data-spark="18"></div>
+    <p class="big" aria-hidden="true">THANK<br>YOU</p>
+    <h2><em>腕時計のななぷれ</em>に<br>あなたの一票を</h2>
+    <a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a>
+    <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイント！<br>合計10万名様に当たる！</p>
+  </section>
+
+  <!-- ===== 商品 ===== -->
+  <section class="items">
+    <div class="in">
+      <div class="head" data-bg="PICK UP">
+        <span class="label">PICK UP</span>
+        <h2>ななぷれの<br>おすすめ</h2>
+        <p class="lead">はじめての方にも、ぜひ一度<br>手に取っていただきたい時計です</p>
+      </div>
+
+      <h3 class="sub-head"><span class="en">STAFF PICK</span><b>スタッフおすすめ</b></h3>
+      <div class="premium">
+        <a class="pm" href="https://item.rakuten.co.jp/7ple/gst-s100g-1bdr/" target="_blank" rel="noopener"><span class="ph"><img src="images/gst-s100g-1bdr.jpg" alt="G-SHOCK Gスチール GST-S100G-1BDR" loading="lazy"></span><div class="tx"><p class="br">G-SHOCK</p><h4>G-STEEL ソーラー オールブラック GST-S100G-1BDR</h4><p class="price">30,680<small>円</small></p></div></a>
+        <a class="pm" href="https://item.rakuten.co.jp/7ple/p150h900/" target="_blank" rel="noopener"><span class="ph"><img src="images/p150h900.jpg" alt="ピエールラニエ オーストレイル P150H900" loading="lazy"></span><div class="tx"><p class="br">PIERRE LANNIER</p><h4>オーストレイル 自動巻き オープンハート P150H900</h4><p class="price">52,800<small>円</small></p></div></a>
+        <a class="pm" href="https://item.rakuten.co.jp/7ple/rn-ak0702y/" target="_blank" rel="noopener"><span class="ph"><img src="images/rn-ak0702y.jpg" alt="オリエント バンビーノ RN-AK0702Y" loading="lazy"></span><div class="tx"><p class="br">ORIENT</p><h4>オリエントバンビーノ 自動巻き RN-AK0702Y</h4><p class="price">33,110<small>円</small></p></div></a>
+      </div>
+
+      <h3 class="sub-head mt"><span class="en">POPULAR ITEMS</span><b>人気のアイテム</b></h3>
+      <div class="grid">
+        <a class="it" href="https://item.rakuten.co.jp/7ple/ga-700-4adr/" target="_blank" rel="noopener"><span class="ph"><img src="images/ga-700-4adr.jpg" alt="G-SHOCK GA-700-4ADR" loading="lazy"></span><span class="tg">G-SHOCK</span><h4>G-SHOCK GA-700-4ADR ブラック×レッド</h4><p class="price">12,280<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/7ple/kp3-627-10/" target="_blank" rel="noopener"><span class="ph"><img src="images/kp3-627-10.jpg" alt="シチズン ウィッカ KP3-627-10" loading="lazy"></span><span class="tg">シチズン</span><h4>シチズン ウィッカ ソーラー KP3-627-10</h4><p class="price">13,090<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/7ple/mtp-m305l/" target="_blank" rel="noopener"><span class="ph"><img src="images/mtp-m305l.jpg" alt="カシオ チプカシ MTP-M305L" loading="lazy"></span><span class="tg">カシオ</span><h4>チプカシ ムーンフェイズ MTP-M305L</h4><p class="price">13,380<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/7ple/eg7043-50w/" target="_blank" rel="noopener"><span class="ph"><img src="images/eg7043-50w.jpg" alt="シチズン キー EG7043-50W" loading="lazy"></span><span class="tg">シチズン</span><h4>シチズン キー エコドライブ EG7043-50W</h4><p class="price">30,800<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/7ple/p091m524/" target="_blank" rel="noopener"><span class="ph"><img src="images/p091m524.jpg" alt="ピエールラニエ パイヤ ミニ P091M524" loading="lazy"></span><span class="tg">ピエールラニエ</span><h4>ピエールラニエ パイヤ ミニ P091M524</h4><p class="price">28,600<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/7ple/l0326/" target="_blank" rel="noopener"><span class="ph"><img src="images/l0326.jpg" alt="ルミノックス レザーバック・シー・タートル 0326" loading="lazy"></span><span class="tg">ルミノックス</span><h4>ルミノックス レザーバック・シー・タートル 0326</h4><p class="price">64,350<small>円</small></p></a>
+      </div>
+      <p class="price-nt">※価格は2026年11月2日時点</p>
+
+      <div class="links">
+        <a class="btn" href="https://www.rakuten.co.jp/7ple/" target="_blank" rel="noopener">腕時計のななぷれ トップへ</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- スマホ追従ボタン -->
+<div class="fixed" id="fixed"><a class="vote" data-vote href="#">ななぷれに投票する<span class="arw">▶</span></a></div>
+
+<script>
+(function(){
+  // ▼投票ページURL（ここだけ変えれば全ボタンに反映。s= は楽天のショップID 404544）
+  var VOTE_URL = 'https://award.rakuten.co.jp/?menu=shop&aid=101&l-id=SOY_fromshop&s=404544';
+  document.querySelectorAll('[data-vote]').forEach(function(a){
+    a.href = VOTE_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // 投票ボタンのシャイン（ランダム間隔）
+  function shine(){
+    document.querySelectorAll('.vote').forEach(function(b){
+      b.classList.remove('np-shine-play');
+      void b.offsetWidth;
+      b.classList.add('np-shine-play');
+    });
+    setTimeout(shine, 2800 + Math.random() * 3400);
+  }
+  setTimeout(shine, 1200);
+
+  // 星のまたたき（位置・周期をばらす）
+  document.querySelectorAll('[data-spark]').forEach(function(box){
+    for (var i = 0; i < +box.dataset.spark; i++) {
+      var s = document.createElement('i');
+      s.style.cssText = 'left:' + (Math.random() * 100) + '%;top:' + (Math.random() * 100) + '%;animation-duration:' + (2.4 + Math.random() * 3) + 's;animation-delay:' + (-Math.random() * 5) + 's';
+      box.appendChild(s);
+    }
+  });
+
+  // 文字盤の目盛り（12・3・6・9は太く長く）
+  var ticks = document.getElementById('ticks'), NS = 'http://www.w3.org/2000/svg';
+  for (var h = 0; h < 12; h++) {
+    var a = h * Math.PI / 6, big = h % 3 === 0, r1 = big ? 70 : 76, r2 = 84, t = document.createElementNS(NS, 'line');
+    t.setAttribute('x1', 120 + Math.sin(a) * r1); t.setAttribute('y1', 160 - Math.cos(a) * r1);
+    t.setAttribute('x2', 120 + Math.sin(a) * r2); t.setAttribute('y2', 160 - Math.cos(a) * r2);
+    t.setAttribute('stroke-width', big ? 4 : 2);
+    ticks.appendChild(t);
+  }
+
+  // 12時で止まった瞬間に広がる星（スカイ・白・シルバー）
+  function star(c){ return 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1.5l2.6 7.9 8.4.1-6.8 5 2.6 8-6.8-4.9-6.8 4.9 2.6-8L.8 9.5l8.4-.1z" fill="' + c + '"/></svg>') + '")'; }
+  var STARS = [star('#7cc4ff'), star('#ffffff'), star('#cfe8ff'), star('#b9c8da')];
+  document.querySelectorAll('[data-burst]').forEach(function(box){
+    var n = +box.dataset.burst;
+    for (var i = 0; i < n; i++) {
+      var b = document.createElement('i'), ang = Math.PI * 2 * (i + Math.random() * 0.5) / n, r = 150 + Math.random() * 90;
+      b.style.cssText = '--img:' + STARS[i % STARS.length] + ';--sz:' + (16 + Math.random() * 16) + 'px;--bx:' + (Math.cos(ang) * r) + 'px;--by:' + (Math.sin(ang) * r * 0.5) + 'px;--br:' + (Math.random() * 180 - 90) + 'deg';
+      box.appendChild(b);
+    }
+  });
+
+  // FVを過ぎたら追従ボタン表示
+  // 締めの投票ボタンが見えている間は隠す
+  var fixed = document.getElementById('fixed'), shown = {};
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ shown[e.target.id] = e.isIntersecting; });
+    fixed.classList.toggle('on', !shown.fv && !shown.last);
+  });
+  io.observe(document.getElementById('fv'));
+  io.observe(document.getElementById('last'));
+})();
+</script>
+</body>
+</html>
